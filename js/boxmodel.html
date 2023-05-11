@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box model</title>
+    <header>this is a header</header>
+    <style>
+      * {
+        border: 1px solid red;
+      }
+      a {
+        background-color: coral;
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .img {
+        width: 80vw;
+        height: 80vh;
+        object-fit: cover;
+      }
+      div {
+        background-color: lightblue;
+        width: 200px;
+        margin: 3rem;
+        padding: 1rem;
+      }
+      .span {
+        background-color: lawngreen;
+        margin: 1rem;
+        padding: 1rem;
+      }
+      main {
+        background-color: blanchedalmond;
+        overflow: auto;
+      }
+      .h2 {
+        width: 100px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>about me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          eum, placeat neque, quod animi totam quo commodi aut numquam quisquam
+          pariatur architecto asperiores quas explicabo molestiae quos facere,
+          sapiente iste.
+        </p>
+      </section>
+      <article>
+        <h2 class="h2">this is article</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+        voluptate ipsum optio rerum. Voluptas eveniet provident, magnam corporis
+        consequatur deserunt explicabo pariatur dolorem laborum dolores, nihil
+        eos facere sint! Sunt!
+      </article>
+      <aside>
+        <h2>related links</h2>
+        <ul>
+          <li>link 1</li>
+          <li>link 2</li>
+          <li>link 3</li>
+        </ul>
+      </aside>
+      <div id="title" class="box" style="color: red">this is a box</div>
+      <div id="title" class="box" style="color: red">this is a box 2</div>
+      <p>this <span class="span" style="color: red"> is a</span> paragraph</p>
+
+      <a>this is an anchor</a>
+      <a>this is an anchor 2</a>
+      <p>para</p>
+      <ul>
+        <li><a>1</a></li>
+      </ul>
+      <div>
+        <img class="img" src="cat-g510df2230_640.jpg" alt="" />
+      </div>
+    </main>
+    <footer>this is a footer</footer>
+  </body>
+</html>

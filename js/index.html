@@ -4,7 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>specificity nd inheritance</title>
+    <style>
+      div {
+        color: red;
+      }
+      .class {
+        color: green !important;
+      }
+      #id {
+        color: orange;
+      }
+
+      .outer {
+        color: blue;
+        height: 100px;
+        background-color: orange;
+        margin: 3rem;
+      }
+
+      .inner {
+        height: inherit;
+        background-color: green;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div id="id" class="class" style="color: aqua !important">
+      this is a div
+    </div>
+    <div class="outer">
+      outer div
+      <div class="inner">inner div</div>
+    </div>
+  </body>
 </html>
